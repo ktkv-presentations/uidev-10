@@ -23,189 +23,645 @@
         <div class="reveal">
             <div class="slides">
                 <section>
-                    <h1>Beautiful presentations</h1>
-                    <h2>New features</h2>
-                    <ul>
-                        <li>Nerd icons </li>
-                        <li>
-                            <code class="js">
-                                (inline) => code("highlighting")
-                            </code>
-                        </li>
-                        <li>Automatic QR Code generation</li>
-                        <li>and much more!</li>
-                    </ul>
-                </section>
-                <section>
-                    <h1>CUSTOM TOKYONIGHT THEME</h1>
-                    <h2 class="fragment">THAT HAS</h2>
-                    <h3 class="fragment">MULTI</h3>
-                    <h4 class="fragment">LEVEL</h4>
-                    <h5 class="fragment">HEADING</h5>
-                    <h6 class="fragment">COLORS</h6>
-                    <h6>
-                        Thanks to this project
-                        <a
-                            href="https://github.com/tcmmichaelb139/obsidian-tokyonight">
-                            
-                        </a>
-                        for the colorscheme!
-                    </h6>
-                </section>
-                <section>
-                    <section>
-                        <h1>Tailwind CSS</h1>
-                        <div class="grid grid-cols-2 gap-8">
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div class="col-span-2">
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h1>Custom classes</h1>
-                        <div class="grid grid-cols-3 gap-8">
-                            <div class="border-r">
-                                <h5>border-r</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-o">
-                                <h5>border-o</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-y">
-                                <h5>border-y</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-                <section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <div>
-                            Now also has Tokyo Night
-                            <code>highlight.js</code>
-                            highlighting implementation
-                        </div>
-                        <pre><code data-trim data-noescape>
-var foo = {
-    bar: function () {
-             alert("Hello, World!");
-         }
-};	
-					</code></pre>
-                    </section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <h5>Inline code highlighting is now also supported!</h5>
-                        <p>
-                            Just wrap your code with
-                            <code>&lt;code&gt;</code>
-                            tag and get highlighting like this
-                            <code class="js">
-                                const foo = () => {return bar}
-                            </code>
-                            !
-                        </p>
-                    </section>
-                </section>
-                <section>
-                    <h1>Mermaid for beautiful diagrams!</h1>
-                    <div class="mermaid">
-                        <pre>
-						erDiagram
-    CUSTOMER ||--o{ ORDER : ""
-    CUSTOMER {
-        string name
-        string custNumber
-        string sector
-    }
-    ORDER ||--|{ LINE-ITEM : contains
-    ORDER {
-        int orderNumber
-        string deliveryAddress
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-        float pricePerUnit
-    }
-    ORDER ||--|{ STUDENT : contains
-    STUDENT {
-        int orderNumber
-        string deliveryAddress
-    }
-						</pre
-                        >
-                    </div>
-                    <h4>
-                        Check documentation
-                        <a href="https://mermaid.js.org/config/usage.html">
-                            here
-                        </a>
-                        !
-                    </h4>
-                </section>
-                <section>
-                    <h1>Now supports Nerd font icons!</h1>
-                    <div>Nerdy project that adds icons to font itself</div>
-                    <h6>
-                        Checkout their site for icons like this
-                        <a href="https://www.nerdfonts.com/">󰖟</a>
-                        !
-                    </h6>
-                </section>
-                <section>
-                    <h1>Now supports automatic QRCode generation!</h1>
-                    <div>
-                        With GoQR you can just add data-type and alt attributes
-                        to your
-                        <code class="html">
-                            &lt;img src="https://goqr.me/" data-type="qrcode" /
-                            &gt;
-                        </code>
-                        tag!
-                    </div>
+                    <h1>Формы</h1>
                     <img
                         class="r-stretch"
-                        src="https://goqr.me/"
+                        src="https://ktkv-presentations.github.io/uidev-10"
                         data-type="qrcode" />
                 </section>
                 <section>
-                    <h1>New changes on the way!</h1>
+                    <section>
+                        <h1>Форма</h1>
+                        <p>
+                            элемент, предназначенный для сбора и отправки данных
+                        </p>
+                        <div class="border-b">
+                            <input
+                                type="text"
+                                name="username"
+                                placeholder="Логин" />
+                            <input
+                                type="password"
+                                name="password"
+                                placeholder="Пароль" />
+                            <button type="submit">Войти</button>
+                        </div>
+                        <h4>Роль форм</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                Позволяют пользователю вводить данные
+                            </div>
+                            <div class="border-b">
+                                Отправляют данные серверу для обработки
+                            </div>
+                            <div class="border-b col-span-2">
+                                Позволяют взаимодействовать с динамическими
+                                системами
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h1>Элементы формы</h1>
+                        <p>
+                            Форма в HTML состоит из контейнера и различных
+                            элементов, позволяющих пользователю вводить данные и
+                            взаимодействовать с веб-страницей
+                        </p>
+                        <h3>Контейнер формы</h3>
+                        <h4>
+                            <code class="html">&lt;form&gt;</code>
+                        </h4>
+                        <p>
+                            определяет область сбора данных и параметры их
+                            отправки
+                        </p>
+                        <pre><code data-trim class="html">
+&lt;form action="/search" method="GET"&gt;
+    &lt;input type="text" name="query" placeholder="Введите запрос"&gt;
+    &lt;button type="submit"&gt;Искать&lt;/button&gt;
+&lt;/form&gt;
+
+&lt;form action="/login" method="POST"&gt;
+    &lt;input type="text" name="username" placeholder="Логин"&gt;
+    &lt;input type="password" name="password" placeholder="Пароль"&gt;
+    &lt;button type="submit"&gt;Войти&lt;/button&gt;
+&lt;/form&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h4><code>action</code></h4>
+                        <p>указывает URL, на который отправляются данные.</p>
+                        <hr />
+                        <h4><code>method</code></h4>
+                        <p>определяет способ передачи данных (GET или POST).</p>
+                        <ul>
+                            <li>
+                                <code>GET</code>
+                                – данные передаются через URL (используется для
+                                поиска, фильтров).
+                            </li>
+                            <li>
+                                <code>POST</code>
+                                – данные передаются скрыто в теле запроса
+                                (используется для логинов, регистрации).
+                            </li>
+                        </ul>
+                        <hr />
+                        <h4><code>autocomplete</code></h4>
+                        <p>включает (on) или выключает (off) автозаполнение.</p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Элементы ввода данных</h1>
+                        <h3><code>&lt;input&gt;</code></h3>
+                        <p>отвечает за ввод данных</p>
+                        <h4>
+                            Возможные значения
+                            <code>type</code>
+                        </h4>
+                        <ul>
+                            <li>
+                                <code>text</code>
+                                – обычное текстовое поле
+                            </li>
+                            <li>
+                                <code>password</code>
+                                – поле для ввода пароля (звёздочки вместо
+                                символов)
+                            </li>
+
+                            <li>
+                                <code>email</code>
+                                – поле для ввода email (проверяет корректность)
+                            </li>
+
+                            <li>
+                                <code>number</code>
+                                – поле для числового ввода (со стрелками)
+                            </li>
+
+                            <li>
+                                <code>date</code>
+                                – выбор даты через календарь
+                            </li>
+
+                            <li>
+                                <code>checkbox</code>
+                                – флажки для выбора нескольких вариантов
+                            </li>
+
+                            <li>
+                                <code>radio</code>
+                                – переключатели для выбора одного варианта
+                            </li>
+
+                            <li>
+                                <code>file</code>
+                                – загрузка файла
+                            </li>
+
+                            <li>
+                                <code>submit</code>
+                                – кнопка отправки формы
+                            </li>
+
+                            <li>
+                                <code>reset</code>
+                                – кнопка сброса формы
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <form
+                            style="
+                                display: flex;
+                                flex-direction: column;
+                                width: 500px;
+                                margin: 0 auto;
+                            ">
+                            <input type="text" placeholder="Имя" />
+                            <input type="password" placeholder="Пароль" />
+                            <input type="email" placeholder="Email" />
+                            <input type="number" placeholder="Возраст" />
+                            <input type="date" />
+                            <input type="checkbox" id="agree" />
+                            <label for="agree">Согласен с условиями</label>
+                            <input type="radio" name="gender" value="male" />
+                            Мужчина
+                            <input type="radio" name="gender" value="female" />
+                            Женщина
+                        </form>
+                    </section>
+                    <section>
+                        <h3><code>&lt;textarea&gt;</code></h3>
+                        <p>используется для ввода длинного текста</p>
+                        <pre><code data-trim class="html">
+&lt;textarea rows="4" cols="50" placeholder="Введите сообщение"&gt;&lt;/textarea&gt;
+                        </code></pre>
+                        <textarea
+                            rows="4"
+                            cols="50"
+                            placeholder="Введите сообщение"></textarea>
+                    </section>
+                    <section>
+                        <h1>Подписи к полям</h1>
+                        <p>
+                            Тег
+                            <code>&lt;label&gt;</code>
+                            улучшает доступность формы, связывая текстовую
+                            подпись с полем ввода
+                        </p>
+                        <em>
+                            атрибут for, должен совпадать с id элемента ввода
+                        </em>
+                        <pre><code data-trim class="html">
+&lt;label for="username"&gt;Имя пользователя:&lt;/label&gt;
+&lt;input type="text" id="username" name="username"&gt;
+                        </code></pre>
+                        <div class="border-b">
+                            <label for="username">Имя пользователя:</label>
+                            <input type="text" id="username" name="username" />
+                        </div>
+                    </section>
+                    <section>
+                        <h1>Кнопки управления</h1>
+                        <h3>Кнопка отправки формы</h3>
+                        <h4><code>submit</code></h4>
+                        <p>Используется для отправки данных формы</p>
+                        <pre><code data-trim class="html">
+                        &lt;button type="submit"&gt;Отправить&lt;/button&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h1>Кнопки управления</h1>
+                        <h3>Кнопка сброса данных</h3>
+                        <h4><code>reset</code></h4>
+                        <p>Очищает все поля формы</p>
+                        <pre><code data-trim class="html">
+&lt;button type="reset"&gt;Сбросить&lt;/button&gt;
+                        </code></pre>
+                    </section>
+                    <section>
+                        <pre><code data-trim class="html">
+&lt;form action="/submit" method="POST"&gt;
+    &lt;label for="name"&gt;Имя:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+
+    &lt;button type="submit"&gt;Отправить&lt;/button&gt;
+    &lt;button type="reset"&gt;Очистить&lt;/button&gt;
+&lt;/form&gt;
+ 
+                        </code></pre>
+                        <form action="/submit" method="POST">
+                            <label for="name">Имя:</label>
+                            <input type="text" id="name" name="name" />
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" />
+                            <button type="submit">Отправить</button>
+                            <button type="reset">Очистить</button>
+                        </form>
+                    </section>
+                    <section>
+                        <h1>Выпадающие списки</h1>
+                        <h3>Одиночный или множественный выбор</h3>
+                        <h4><code>select</code></h4>
+                        <p>создаёт выпадающий список</p>
+                        <pre><code data-trim class="html">
+&lt;label for="city"&gt;Выберите город:&lt;/label&gt;
+&lt;select id="city" name="city"&gt;
+    &lt;option value="moscow"&gt;Омск&lt;/option&gt;
+    &lt;option value="spb"&gt;Санкт-Петербург&lt;/option&gt;
+    &lt;option value="kazan"&gt;Москва&lt;/option&gt;
+&lt;/select&gt;
+                        </code></pre>
+                        <div class="border-b">
+                            <label for="city">Выберите город:</label>
+                            <select id="city" name="city">
+                                <option value="moscow">Омск</option>
+                                <option value="spb">Санкт-Петербург</option>
+                                <option value="kazan">Москва</option>
+                            </select>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>Основные атрибуты</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                <code>multiple</code>
+                                <p>разрешает множественный выбор</p>
+                                <select id="city" name="city" multiple>
+                                    <option value="moscow">Омск</option>
+                                    <option value="spb">Санкт-Петербург</option>
+                                    <option value="kazan">Москва</option>
+                                </select>
+                            </div>
+                            <div class="border-b">
+                                <code>size</code>
+                                <p>
+                                    задаёт количество видимых элементов списка
+                                </p>
+                                <select id="city" name="city" size="5">
+                                    <option value="moscow">Омск</option>
+                                    <option value="spb">Санкт-Петербург</option>
+                                    <option value="kazan">Москва</option>
+                                    <option value="moscow">Омск</option>
+                                    <option value="spb">Санкт-Петербург</option>
+                                    <option value="kazan">Москва</option>
+                                    <option value="moscow">Омск</option>
+                                    <option value="spb">Санкт-Петербург</option>
+                                    <option value="kazan">Москва</option>
+                                    <option value="moscow">Омск</option>
+                                    <option value="spb">Санкт-Петербург</option>
+                                    <option value="kazan">Москва</option>
+                                </select>
+                            </div>
+
+                            <div class="border-b col-span-2">
+                                <code>name</code>
+                                <p>
+                                    имя, под которым данные отправляются на
+                                    сервер.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h1>определение элементов списка</h1>
+                        <h3><code>&lt;option&gt;</code></h3>
+                        <p>задаёт вариант в списке</p>
+                        <h4>Основные атрибуты</h4>
+                        <ul>
+                            <li>
+                                <code>value</code>
+                                – значение, передающееся на сервер
+                            </li>
+                            <li>
+                                <code>selected</code>
+                                – делает этот вариант выбранным по умолчанию
+                            </li>
+                            <li>
+                                <code>disabled</code>
+                                – делает вариант недоступным для выбора
+                            </li>
+                        </ul>
+                        <pre><code data-trim class="html">
+&lt;select name="language"&gt;
+    &lt;option value="html"&gt;HTML&lt;/option&gt;
+    &lt;option value="css" selected&gt;CSS&lt;/option&gt;
+    &lt;option value="js" disabled&gt;JavaScript (недоступно)&lt;/option&gt;
+&lt;/select&gt;
+                        </code></pre>
+                        <select name="language">
+                            <option value="html">HTML</option>
+                            <option value="css" selected>CSS</option>
+                            <option value="js" disabled>
+                                JavaScript (недоступно)
+                            </option>
+                        </select>
+                    </section>
+                    <section>
+                        <h1>Группировка элементов списка</h1>
+                        <h3><code>&lt;optgroup&gt;</code></h3>
+                        <p>объединение связанных опций в группы</p>
+                        <pre><code data-trim class="html">
+&lt;label for="cars"&gt;Выберите автомобиль:&lt;/label&gt;
+&lt;select id="cars" name="car"&gt;
+    &lt;optgroup label="Германия"&gt;
+        &lt;option value="bmw"&gt;BMW&lt;/option&gt;
+        &lt;option value="audi"&gt;Audi&lt;/option&gt;
+    &lt;/optgroup&gt;
+    &lt;optgroup label="Япония"&gt;
+        &lt;option value="toyota"&gt;Toyota&lt;/option&gt;
+        &lt;option value="honda"&gt;Honda&lt;/option&gt;
+    &lt;/optgroup&gt;
+&lt;/select&gt;
+                        </code></pre>
+                        <label for="cars">Выберите автомобиль:</label>
+                        <select id="cars" name="car">
+                            <optgroup label="Германия">
+                                <option value="bmw">BMW</option>
+                                <option value="audi">Audi</option>
+                            </optgroup>
+                            <optgroup label="Япония">
+                                <option value="toyota">Toyota</option>
+                                <option value="honda">Honda</option>
+                            </optgroup>
+                        </select>
+                    </section>
+                    <section>
+                        <h1>Группировка полей</h1>
+                        <p>
+                            Когда форма содержит несколько связанных полей, их
+                            удобно группировать с помощью
+                            <code>&lt;fieldset&gt;</code>
+                        </p>
+                        <pre><code data-trim class="html">
+&lt;fieldset&gt;
+    &lt;legend&gt;Контактные данные&lt;/legend&gt;
+    &lt;label for="name"&gt;Имя:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name" /&gt;
+
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" /&gt;
+&lt;/fieldset&gt;
+                        </code></pre>
+                        <fieldset>
+                            <legend>Контактные данные</legend>
+                            <label for="name">Имя:</label>
+                            <input type="text" id="name" name="name" />
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" />
+                        </fieldset>
+                    </section>
+                    <section>
+                        <h1>заголовок для группы полей</h1>
+                        <h3><code>&lt;legend&gt;</code></h3>
+                        <p>
+                            размещается внутри &lt;fieldset&gt; и задаёт
+                            заголовок группы
+                        </p>
+                        <pre><code data-trim class="html">
+&lt;fieldset&gt;
+    &lt;legend&gt;Личные данные&lt;/legend&gt;
+    &lt;label for="fname"&gt;Имя:&lt;/label&gt;
+    &lt;input type="text" id="fname" name="fname"&gt;
+    
+    &lt;label for="lname"&gt;Фамилия:&lt;/label&gt;
+    &lt;input type="text" id="lname" name="lname"&gt;
+&lt;/fieldset&gt;
+                        </code></pre>
+                        <fieldset>
+                            <legend>Личные данные</legend>
+                            <label for="fname">Имя:</label>
+                            <input type="text" id="fname" name="fname" />
+
+                            <label for="lname">Фамилия:</label>
+                            <input type="text" id="lname" name="lname" />
+                        </fieldset>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>расположения полей формы</h1>
+                        <p>
+                            Для гибкого расположения полей формы можно
+                            использовать
+                            <code>&lt;div&gt;</code>
+                            ,
+                            <code>&lt;p&gt;</code>
+                            и другие блоки
+                        </p>
+                        <pre><code data-trim class="html">
+<form>
+    <div>
+        <label for="username">Логин:</label>
+        <input type="text" id="username" name="username">
+    </div>
+    <div>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password">
+    </div>
+</form>
+                        </code></pre>
+                        <form>
+                            <div>
+                                <label for="username">Логин:</label>
+                                <input
+                                    type="text"
+                                    id="username"
+                                    name="username" />
+                            </div>
+                            <div>
+                                <label for="password">Пароль:</label>
+                                <input
+                                    type="password"
+                                    id="password"
+                                    name="password" />
+                            </div>
+                        </form>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Атрибуты данных формы</h1>
+                        <p></p>
+                        <ul>
+                            <li>
+                                <code>name</code>
+                                - Имя поля, используемое при отправке данных на
+                                сервер
+                            </li>
+                            <li>
+                                <code>id</code>
+                                - Уникальный идентификатор элемента
+                            </li>
+                            <li>
+                                <code>value</code>
+                                - Начальное значение элемента формы
+                            </li>
+                            <li>
+                                <code>placeholder</code>
+                                - Текст-подсказка внутри поля ввода
+                            </li>
+                            <li>
+                                <code>required</code>
+                                - Обязательное поле для заполнения
+                            </li>
+                            <li>
+                                <code>readonly</code>
+                                - Поле доступно только для чтения
+                            </li>
+                            <li>
+                                <code>disabled</code>
+                                - Поле отключено (не отправляется с формой)
+                            </li>
+                        </ul>
+                        <div class="border-b">
+                            <form>
+                                <label for="username">Логин:</label>
+                                <input
+                                    type="text"
+                                    id="username"
+                                    name="username"
+                                    placeholder="Введите логин"
+                                    required />
+
+                                <label for="email">Email:</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    value="example@mail.com"
+                                    readonly />
+
+                                <label for="age">Возраст:</label>
+                                <input
+                                    type="number"
+                                    id="age"
+                                    name="age"
+                                    min="18"
+                                    max="99" />
+
+                                <button type="submit">Отправить</button>
+                            </form>
+                        </div>
+                    </section>
+                    <section>
+                        <h1>Валидация данных формы</h1>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="border-b">
+                                <h3>
+                                    <code>pattern</code>
+                                </h3>
+                                <p>
+                                    Регулярное выражение для проверки формата
+                                    ввода
+                                </p>
+                                <pre><code data-trim class="html">
+                                    &lt;input pattern="\+7\d{10}" placeholder="+7XXXXXXXXXX" required type="tel" id="phone" name="phone" &gt;
+                                </code></pre>
+                                <form>
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        name="phone"
+                                        pattern="\+7\d{10}"
+                                        placeholder="+7XXXXXXXXXX"
+                                        required />
+                                </form>
+                            </div>
+                            <div class="border-b">
+                                <h3>
+                                    <code>min</code>
+                                    /
+                                    <code>max</code>
+                                </h3>
+                                <p>
+                                    Минимальное и максимальное значение для
+                                    чисел и дат
+                                </p>
+                                <pre><code data-trim class="html">
+                                    <input min="18" max="60" type="number" id="age" name="age" step="1" required>
+                                </code></pre>
+                                <form>
+                                    <input
+                                        type="number"
+                                        id="age"
+                                        name="age"
+                                        min="18"
+                                        max="60"
+                                        step="1"
+                                        required />
+                                </form>
+                            </div>
+                            <div class="border-b col-span-2">
+                                <h3>
+                                    <code>step</code>
+                                </h3>
+                                <p>Шаг изменения значения</p>
+                                <pre><code data-trim class="html">
+                                    &lt;input type="number" id="age" name="age" min="18" max="60" step="5" required /&gt;
+                                </code></pre>
+                                <form>
+                                    <input type="number" step="5" required />
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>состояния элементов</h1>
+                        <p>
+                            Формы могут менять свой стиль в зависимости от
+                            состояния элементов и это можно реализовать с
+                            помощью псевдоклассов
+                        </p>
+                        <ul>
+                            <li>
+                                <code>:focus</code>
+                                - Стилизация элемента при фокусе (когда
+                                пользователь вводит данные)
+                            </li>
+                            <li>
+                                <code>:hover</code>
+                                - Стилизация элемента при наведении курсора
+                            </li>
+                            <li>
+                                <code>:disabled</code>
+                                - Стилизация отключенных элементов
+                            </li>
+                            <li>
+                                <code>:checked</code>
+                                - Стилизация отмеченных чекбоксов и радиокнопок
+                            </li>
+                        </ul>
+                        <pre><code data-trim class="css">
+button:hover {
+    background-color: #0056b3;
+}
+                        </code></pre>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Самостоятельно</h1>
+                        <img
+                            class="r-stretch"
+                            src="https://practiceboard.com/"
+                            data-type="qrcode" />
+                    </section>
+                    <section>
+                        <iframe
+                            src="form.html"
+                            frameborder="0"
+                            class="r-stretch"></iframe>
+                    </section>
                 </section>
             </div>
         </div>
@@ -396,4 +852,3 @@ var foo = {
         </script>
     </body>
 </html>
-

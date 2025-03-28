@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Koala with CSS</title>
+    </head>
+    <body>
+        <h2>Регистрация</h2>
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend>Личная информация</legend>
+                <label for="firstname">Имя:</label>
+                <input type="text" id="firstname" name="firstname" required />
+                <br />
+                <br />
+
+                <label for="lastname">Фамилия:</label>
+                <input type="text" id="lastname" name="lastname" required />
+                <br />
+                <br />
+
+                <label for="dob">Дата рождения:</label>
+                <input type="date" id="dob" name="dob" required />
+                <br />
+                <br />
+
+                <label for="gender">Пол:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Мужской</option>
+                    <option value="female">Женский</option>
+                    <option value="other">Другое</option>
+                </select>
+                <br />
+                <br />
+            </fieldset>
+
+            <fieldset>
+                <legend>Данные для входа</legend>
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required />
+                <br />
+                <br />
+            </fieldset>
+
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </body>
+</html>
